@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}KMG GARMENTS - Premium Towel Manufacturer{% endblock %}
+
+{% block content %}
+<!-- Home Hero Section -->
+<div class="little">
+  <div class="col-2">
+    <h1>Smooth Towels...!!</h1>
+    <br><br>
+    <p>A towel company website typically highlights its product range, emphasizing quality, materials, and intended use,
+      such as bath, hand, or beach towels.<br>
+      KMG Garments offers a variety of towels crafted from premium cotton and other materials, focusing on absorbency,
+      softness, and durability.<br>
+      We provide options for different sizes and colors, allowing customers to match their towels to their bathroom
+      decor or personal preferences.</p>
+    <br><br>
+    <a href="{% url 'products' %}" class="button">View Company Products</a>
+  </div>
+  <div class="col-2">
+    <img src="{% static 'core/images/backgound.jpg' %}" alt="KMG Garments Premium Towels" width="100%" height="100%">
+  </div>
+</div>
+
+<!-- Products Preview Section -->
+<h2 class="com">COMPANY PRODUCTS</h2>
+<div class="items">
+  <div class="product">
+    <img src="{% static 'core/images/towel.2.jpg' %}" alt="Ultra Gray Towel" width="300" height="200">
+    <h4 class="head">Ultra Gray</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.3.jpg' %}" alt="Ultra Black Towel" width="300" height="200">
+    <h4 class="head">Ultra Black</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.4.jpg' %}" alt="Ultra Sandle Towel" width="300" height="200">
+    <h4 class="head">Ultra Sandle</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.5.jpg' %}" alt="Ultra White Towel" width="300" height="200">
+    <h4 class="head">Ultra White</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.6.jpg' %}" alt="Ultra Pure-White Towel" width="300" height="200">
+    <h4 class="head">Ultra Pure-White</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.7.jpg' %}" alt="Ultra Multi-color Towel" width="300" height="200">
+    <h4 class="head">Ultra Multi-color</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.8.jpg' %}" alt="Ultra Brownshade Towel" width="300" height="200">
+    <h4 class="head">Ultra Brownshade</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.9.jpg' %}" alt="Ultra Ash Towel" width="300" height="200">
+    <h4 class="head">Ultra Ash</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.10.jpg' %}" alt="Ultra Orange Towel" width="300" height="200">
+    <h4 class="head">Ultra Orange</h4>
+  </div>
+  <div class="product">
+    <img src="{% static 'core/images/towel.1.jpg' %}" alt="Ultra Maroon Towel" width="300" height="200">
+    <h4 class="head">Ultra Maroon</h4>
+  </div>
+</div>
+
+<!-- About Preview Section -->
+<div class="about">
+  <h2 class="tittle">About Us</h2>
+  <br>
+  <h5 class="tittle"><b>A saga of growth and innovation</b></h5>
+  <div class="para">
+    <p class="b">KMG Garments manufacturing and export towel based at Theni was established in the year of 2015.
+      Our sophisticated production unit is spread across 5000 sq. feet with a manufacturing capacity of 50,000 pieces per month.</p>
+  </div>
+  <br>
+  <a href="{% url 'about' %}" class="button" style="margin-left:0">Read More About Us</a>
+</div>
+{% endblock %}

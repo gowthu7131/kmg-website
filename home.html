@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+         * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family:'Times New Roman', Times, serif;
+      background-image: url(background\ rose.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background:linear-gradient(white rgb(183, 19, 131));
+      padding: 10px 20px;
+      position: sticky;
+      top: 0%;
+    }
+    /* Logo */
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      position: sticky;
+      top: 0%;
+    }
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+      position: sticky;
+      top: 0%;
+    }
+    /* Navigation bar */
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+    }
+    .navbar ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: red;
+    }
+    /*home section--*/
+    p{
+    color: black;
+    margin-left: 20px;
+}
+.little{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 40px; 
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin: 25px 0;
+    font-family: cursive;
+    margin-left: 20px;
+}
+/*button*/
+.button{
+    display: inline-block;
+    background: black;
+    color: aliceblue;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-left: 250px;
+    text-decoration: none;
+}
+.button:hover{
+background: red;
+}
+.now{
+    text-align: center;
+    margin-bottom: 25px;
+}
+/*foooter section*/
+ footer{
+        background: grey transparent;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1510px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: black;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: black;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+    }
+    .social-icons i:hover{
+        color:black;
+    }
+    .bottom-bar{
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color:white;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+  
+    </style>
+    <nav class="navbar">
+    <!-- Logo Section -->
+    <a href="" class="logo">
+      <img src="kmg logo.png.png" alt="Logo">
+      KMG GARMENTS
+    </a>
+
+    <!-- Navigation Links -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!--home section-->
+  <div class="little">
+            <div class="col-2">
+<h1>Smooth Towels...!!</h1>
+<br><br>
+<p>A towel company website typically highlights its product range, emphasizing quality, materials, and intended use, such as bath, hand, or beach towels.<br> Companies like Trident offer a variety of towels crafted from premium cotton and other materials, focusing on absorbency, softness, and durability.<br> Trident's website also provides options for different sizes and colors, allowing customers to match their towels to their bathroom decor or personal preferences.</p><br><br>
+<a href="product .html" class="button">company products here</a>
+        </div>
+        <div class="col-2">
+            <img src="backgound.jpg" width="100%" height="100%">
+        </div>
+        <br><br>
+        <!--footer section-->
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p><b>Email:</b> gowthamkumarit@gmail.com</p>
+                <p><b>Phone:</b> +91 9790202651</p>
+                <p><b>Address:</b> kodangipatti,Theni. 625531</p>
+            </div>
+            <div class="footer-content">
+                <h3>Easy To View</h3>
+                 <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>@ THANK YOU FOR VISIT OUR COMPANY WEBSITE</p>
+        </div>
+    </footer>
+</body>
+</html>

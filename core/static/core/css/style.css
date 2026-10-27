@@ -1,0 +1,349 @@
+/* =========================================
+   KMG GARMENTS - Main Stylesheet
+   ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('../images/background rose.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* =========================================
+   Navbar
+   ========================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(white, rgb(183, 19, 131));
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: red;
+}
+
+/* =========================================
+   Django Messages / Flash Alerts
+   ========================================= */
+.messages-container {
+  position: relative;
+  z-index: 50;
+  padding: 10px 20px;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  animation: slideDown 0.4s ease;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  line-height: 1;
+  padding: 0 5px;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   Home Section
+   ========================================= */
+p {
+  color: black;
+  margin-left: 20px;
+}
+
+.little {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 25px 0;
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+/* =========================================
+   Button
+   ========================================= */
+.button {
+  display: inline-block;
+  background: black;
+  color: aliceblue;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin-left: 250px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: red;
+}
+
+.now {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   Product Section
+   ========================================= */
+.com {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product img {
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.head {
+  text-align: center;
+  font-weight: 500;
+}
+
+.product img:hover {
+  opacity: 0.9;
+}
+
+/* =========================================
+   About Section
+   ========================================= */
+.about {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.b {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.tittle {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.about img {
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about img:hover {
+  opacity: 0.8;
+}
+
+.para {
+  width: 1200px;
+  height: 65px;
+  border: 1px solid;
+  overflow-x: hidden;
+  margin-left: 100px;
+  padding-top: 10px;
+  background-color: transparent;
+}
+
+/* =========================================
+   Footer Section
+   ========================================= */
+footer {
+  background: rgba(128, 128, 128, 0.6);
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 33.3%;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+}
+
+.footer-content ul {
+  text-align: center;
+}
+
+.list {
+  padding: 0;
+}
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition-duration: .5s;
+}
+
+.list li:hover::before {
+  width: 70px;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons i {
+  color: black;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.social-icons i:hover {
+  color: black;
+}
+
+.bottom-bar {
+  background: black;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.bottom-bar p {
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
