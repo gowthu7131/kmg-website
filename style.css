@@ -42,9 +42,13 @@ img {
   padding: 12px 5%;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
 .navbar .logo {
@@ -55,6 +59,7 @@ img {
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.2s ease;
+  white-space: nowrap;
 }
 
 .navbar .logo:hover {
@@ -75,6 +80,7 @@ img {
   gap: 35px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
 
 .navbar ul li a {
@@ -85,6 +91,7 @@ img {
   padding: 8px 12px;
   border-radius: 4px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navbar ul li a:hover,
@@ -673,7 +680,13 @@ footer h3 {
 
 /* --- Large Desktop Monitors (> 1440px) --- */
 @media (min-width: 1441px) {
-  .navbar,
+  .navbar {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 5%;
+  }
   .little,
   .items,
   .about,
@@ -755,6 +768,10 @@ footer h3 {
     padding: 15px 20px;
     gap: 15px;
     text-align: center;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
   }
   .navbar .logo {
     justify-content: center;
@@ -765,6 +782,7 @@ footer h3 {
     justify-content: center;
     gap: 10px 15px;
     width: 100%;
+    margin-left: 0;
   }
   .navbar ul li a {
     font-size: 16px;
