@@ -1,51 +1,121 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
-{% block title %}Products - KMG GARMENTS{% endblock %}
+{% block title %}Products — KMG GARMENTS{% endblock %}
 
 {% block content %}
-<!-- Products Section -->
-<h2 class="com">COMPANY PRODUCTS</h2>
-
-<div class="items">
-  <div class="product">
-    <img src="{% static 'core/images/towel.2.jpg' %}" alt="Ultra Gray Towel">
-    <h4 class="head">Ultra Gray</h4>
+<!-- Product Showcase Section -->
+<section class="products-section">
+  <div class="section-title-wrap">
+    <span class="section-tag">COMPANY PRODUCTS</span>
+    <h2 class="section-heading">Signature Bath &amp; Linen Towels</h2>
+    <p class="section-subheading">Crafted with high-twist 100% ring-spun cotton for unmatched absorbency, cloud-like plushness, and enduring color retention.</p>
   </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.3.jpg' %}" alt="Ultra Black Towel">
-    <h4 class="head">Ultra Black</h4>
-  </div>
+  <div class="items">
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.2.jpg' %}" alt="Ultra Gray Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Gray</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.4.jpg' %}" alt="Ultra Sandle Towel">
-    <h4 class="head">Ultra Sandle</h4>
-  </div>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.3.jpg' %}" alt="Ultra Black Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Black</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.5.jpg' %}" alt="Ultra White Towel">
-    <h4 class="head">Ultra White</h4>
-  </div>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.4.jpg' %}" alt="Ultra Sandle Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Sandle</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.10.jpg' %}" alt="Ultra Orange Towel">
-    <h4 class="head">Ultra Orange</h4>
-  </div>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.5.jpg' %}" alt="Ultra White Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra White</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.1.jpg' %}" alt="Ultra Maroon Towel">
-    <h4 class="head">Ultra Maroon</h4>
-  </div>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.10.jpg' %}" alt="Ultra Orange Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Orange</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.11.jpg' %}" alt="Ultra Navy-Blue Towel">
-    <h4 class="head">Ultra Navy-Blue</h4>
-  </div>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.1.jpg' %}" alt="Ultra Maroon Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Maroon</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="{% static 'core/images/towel.12.jpg' %}" alt="Ultra Emerald-Green Towel">
-    <h4 class="head">Ultra Emerald-Green</h4>
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.11.jpg' %}" alt="Ultra Navy-Blue Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Navy-Blue</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-img-wrap">
+        <img src="{% static 'core/images/towel.12.jpg' %}" alt="Ultra Emerald-Green Towel">
+      </div>
+      <div class="product-content">
+        <span class="product-badge">100% Combed Cotton • 550 GSM</span>
+        <h3 class="product-title">Ultra Emerald-Green</h3>
+        <div class="product-footer">
+          <a href="{% url 'contact' %}" class="quick-enquire">Quick Enquire <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 {% endblock %}

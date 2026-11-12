@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KMG Garments - Premium towel manufacturer and exporter based in Theni, India. Quality bath, hand and beach towels since 2015.">
-  <title>{% block title %}KMG GARMENTS{% endblock %}</title>
+  <meta name="description" content="KMG Garments - Luxury towel manufacturer and global exporter based in Theni, India. Quality bath, hand, and pool towels since 2015.">
+  <title>{% block title %}KMG GARMENTS — Luxury Textile &amp; Garment Exports{% endblock %}</title>
   <link rel="icon" type="image/png" href="{% static 'core/images/kmg logo.png.png' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   {% block extra_head %}{% endblock %}
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Glassmorphic Navbar -->
   <nav class="navbar">
     <a href="{% url 'home' %}" class="logo">
       <img src="{% static 'core/images/kmg logo.png.png' %}" alt="KMG Garments Logo">
@@ -41,17 +44,19 @@
   <!-- Page Content -->
   {% block content %}{% endblock %}
 
-  <!-- Footer -->
+  <!-- Dark Executive Footer -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <h3>Contact Us</h3>
-        <p><b>Email:</b> gowthamkumarit@gmail.com</p>
+      <div class="footer-content footer-brand">
+        <h3>KMG GARMENTS</h3>
+        <p class="footer-desc">Premium towel manufacturer &amp; global textile exporter based in Theni, India. Delivering luxury, absorbency, and durability since 2015.</p>
+        <p><b>Address:</b> Theni - Bodi Main Road, Kodangipatti, Theni, Tamil Nadu 625531</p>
         <p><b>Phone:</b> +91 9790202651</p>
-        <p><b>Address:</b> kodangipatti, Theni. 625531</p>
+        <p><b>Email:</b> gowthamkumarit@gmail.com</p>
       </div>
+
       <div class="footer-content">
-        <h3>Easy To View</h3>
+        <h3>Quick Links</h3>
         <ul class="list">
           <li><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'products' %}">Products</a></li>
@@ -59,18 +64,21 @@
           <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </div>
+
       <div class="footer-content">
-        <h3>Follow Us</h3>
+        <h3>Connect With Us</h3>
+        <p class="footer-desc">For export inquiries, custom GSM orders, and private-label manufacturing partnerships:</p>
         <ul class="social-icons">
-          <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+          <li><a href="https://facebook.com" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://instagram.com" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://whatsapp.com" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com" class="social-link" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
+
     <div class="bottom-bar">
-      <p>&copy; {% now "Y" %} KMG GARMENTS &mdash; THANK YOU FOR VISITING OUR COMPANY WEBSITE</p>
+      <p>&copy; {% now "Y" %} KMG GARMENTS. ALL RIGHTS RESERVED. EXPORT QUALITY TEXTILES.</p>
     </div>
   </footer>
 </body>
