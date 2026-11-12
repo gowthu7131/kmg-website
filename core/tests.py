@@ -26,6 +26,10 @@ class KMGViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'core/products.html')
         self.assertContains(response, 'COMPANY PRODUCTS')
+        self.assertContains(response, 'Ultra Navy-Blue')
+        self.assertContains(response, 'Ultra Emerald-Green')
+        self.assertContains(response, 'towel.11.jpg')
+        self.assertContains(response, 'towel.12.jpg')
 
     def test_contact_page_get(self):
         response = self.client.get(reverse('contact'))
